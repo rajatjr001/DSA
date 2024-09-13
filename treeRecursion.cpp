@@ -1,14 +1,29 @@
-#include <iostream>
-using namespace std;
-void fun1(int n){
-    if(n>0){
-        cout<<n;
-        fun1(n-1);
-        fun1(n-1);
-        }
+#include <stdio.h>
 
-}
+int main() {
 
-int main(){
-    fun1(3);
+  int n1;
+
+  printf("Enter percentge : ");
+  scanf("%d",&n1);
+
+
+  if (n1>=90 && n1<100){
+    printf("grade a");
+  }
+  
+  else if( n1>=80 && n1<=89){
+    printf("grade b");
+  }
+
+
+  else if(n1>=70 && n1<=79){
+    printf("grade c");
+  }
+  else if(n1>= 60 && n1<=69){
+    printf("grade d");
+  }
+
+
+  return 0;
 }
